@@ -13,7 +13,11 @@ For more information about libtcod : http://roguecentral.org/doryen/libtcod/
 
 ##To run the game on Linux:
 Just make sure you have Python 2.7.6 or later installed on your system
+
 After download the game, extract in a folder
+
 On the terminal, go to the folder where you extracted the files
+
 Open game.py (with the command 'python game.py')
+
 Enjoy!
