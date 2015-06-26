@@ -4,4 +4,4 @@ Calabouços & Cachorros (which translated means Dungeons & Dogs) is a roguelike 
 
 This game was made in Python 2.7.6 and libtcod 1.5.1
 
-For more information about libtcode : http://roguecentral.org/doryen/libtcod/
+For more information about libtcod : http://roguecentral.org/doryen/libtcod/
