@@ -39,4 +39,4 @@ d - drop itens on the floor
 
 < - go down on the stairs to the next dungeon level
 
-git c - open a menu with the character information
+c - open a menu with the character information
