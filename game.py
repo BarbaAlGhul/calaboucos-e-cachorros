@@ -199,9 +199,9 @@ class Object:
 class Fighter:
 	#nessa classe ficam todas as propriedades e métodos relacionados ao combate (monstros, jogador, NPCs)
 	def __init__(self, hp, defense, power, xp, death_function = None):
-		self.max_hp = hp
+		self.base_max_hp = hp
 		self.hp = hp
-		self.defense = defense
+		self.base_defense = defense
 		self.base_power = power
 		self.death_function = death_function
 		self.xp = xp
