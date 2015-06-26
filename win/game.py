@@ -60,8 +60,8 @@ FIREBALL_RADIUS = 3
 FIREBALL_DAMAGE = 25
 
 #definindo a experiência base e o fator para subir de nível
-LEVEL_UP_BASE = 200
-LEVEL_UP_FACTOR = 150
+LEVEL_UP_BASE = 2
+LEVEL_UP_FACTOR = 15
 
 #definindo o tamanho da tela do console quando subir de nível
 LEVEL_SCREEN_WIDTH = 40
@@ -199,9 +199,9 @@ class Object:
 class Fighter:
 	#nessa classe ficam todas as propriedades e métodos relacionados ao combate (monstros, jogador, NPCs)
 	def __init__(self, hp, defense, power, xp, death_function = None):
-		self.max_hp = hp
+		self.base_max_hp = hp
 		self.hp = hp
-		self.defense = defense
+		self.base_defense = defense
 		self.base_power = power
 		self.death_function = death_function
 		self.xp = xp
