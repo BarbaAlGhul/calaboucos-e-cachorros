@@ -60,8 +60,8 @@ FIREBALL_RADIUS = 3
 FIREBALL_DAMAGE = 25
 
 #definindo a experiência base e o fator para subir de nível
-LEVEL_UP_BASE = 2
-LEVEL_UP_FACTOR = 15
+LEVEL_UP_BASE = 200
+LEVEL_UP_FACTOR = 150
 
 #definindo o tamanho da tela do console quando subir de nível
 LEVEL_SCREEN_WIDTH = 40
