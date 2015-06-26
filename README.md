@@ -33,6 +33,8 @@ Enjoy!
 
 
 ##COMMAND LIST:
+i - open inventory
+
 g - grab itens on the floor
 
 d - drop itens on the floor
