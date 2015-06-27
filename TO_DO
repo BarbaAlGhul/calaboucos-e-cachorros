@@ -1,12 +1,12 @@
 
-## TO DO List
+TO DO List
 
-### Problemas gerais
+Problemas gerais
 -Resolver problema dos caracteres ASCII especiais
   -putchar é uma solução, porém deixará o código muito comprido(implementado na tela inicial do jogo)
 
 
-### Desenvolver:
-  -Novos monstros
+Desenvolver:
+  - Novos monstros
   -Novos itens
   -Sistema de score
