@@ -342,7 +342,7 @@ class Equipment:
 		self.is_equipped = False
 		
 
-	def toggle_equiped(self): #muda o status de equipado para não equipado
+	def toggle_equip(self): #muda o status de equipado para não equipado
 		if self.is_equipped:
 			self.dequip()
 		else:
