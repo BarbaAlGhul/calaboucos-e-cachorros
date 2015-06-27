@@ -142,7 +142,6 @@ class Object:
 		self.equipment = equipment
 		if self.equipment: #deixa o compomente Equipment saber quem possui ele
 			self.equipment.owner = self
-			
 			#deve existir um componente Item para o componente Equipment, para eles poderem funcionar corretamente, já que todo equipamento é um item
 			self.item = Item()
 			self.item.owner = self
@@ -299,15 +298,10 @@ class Item:
 		else:
 			inventory.append(self.owner)
 			objects.remove(self.owner)
-			if self.owner.name[0:6] == 'pocao' or self.owner.name[:-1] == 'a':
+			if self.owner.name[0:6] == 'pocao':
 				message('Voce pegou uma ' + self.owner.name + '!', libtcod.green)
 			else:
 				message('Voce pegou um ' + self.owner.name + '!', libtcod.green)
-
-				#caso especial: automaticamente equipa um item se o slot correspondente estiver vazio
-				equipment = self.owner.equipment
-				if equipment and get_equipped_in_slot(equipment.slot) is None:
-					equipment.equip()
 
 	def use(self):
 		#caso especial: se o objeto contem o componente Equipment, a ação de usar equipa ou desequipa o item
@@ -348,7 +342,7 @@ class Equipment:
 		self.is_equipped = False
 		
 
-	def toggle_equip(self): #muda o status de equipado para não equipado
+	def toggle_equiped(self): #muda o status de equipado para não equipado
 		if self.is_equipped:
 			self.dequip()
 		else:
@@ -359,6 +353,10 @@ class Equipment:
 		old_equipment = get_equipped_in_slot(self.slot)
 		if old_equipment is not None:
 			old_equipment.dequip()
+			#caso especial: automaticamente equipa um item se o slot correspondente estiver vazio
+			#equipment = self.owner.equipment
+			#if equipment and get_equipped_in_slot(equipment.slot) is None:
+			#	equipment.equip()
 
 		#equipa um objeto e mostra uma mensagem sobre isso
 		self.is_equipped = True
@@ -368,7 +366,7 @@ class Equipment:
 		#desequipa o objeto e mostra uma mensagem sobre isso
 		if not self.is_equipped: return
 		self.is_equipped = False
-		message('Retirou ' + self.owner.name + ' da ' + self.slot + '.', libtcod.light_yellow)
+		message('Retirou ' + self.owner.name + 'da' + self.slot + '.', libtcod.light_yellow)
 
 
 
