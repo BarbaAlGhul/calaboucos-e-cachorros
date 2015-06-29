@@ -14,7 +14,7 @@ The game is not bug free and it's still under development. If someone notice som
 
 
 ##To run the game on Linux:
-Just make sure you have Python 2.7.6 or later installed on your system
+Just make sure you have Python 2.7.6 or newer versions installed on your system (must be Python 2.7.x. Python 3 is unsupported by the library yet)
 
 After download the game, extract in a folder
 
