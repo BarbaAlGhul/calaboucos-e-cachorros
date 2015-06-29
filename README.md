@@ -42,3 +42,11 @@ d - drop itens on the floor
 < - go down on the stairs to the next dungeon level
 
 c - open a menu with the character information
+
+Enter - pass one turn
+
+Up, Down, Left, Right - move around
+
+Mouse button left - use to target some spells
+
+Mouse button right - use to cancel a spell use
