@@ -8,7 +8,7 @@ Linux and Windows version
 
 For more information about libtcod : http://roguecentral.org/doryen/libtcod/
 
-The game is not bug free, if anyone notice something, feel free to contact me
+The game is not bug free and it's still under development. If someone notice something, feel free to contact me
 
 
 
