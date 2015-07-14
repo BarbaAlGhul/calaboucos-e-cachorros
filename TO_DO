@@ -4,9 +4,9 @@ TO DO List
 Problemas gerais
 -Resolver problema dos caracteres ASCII especiais
   -putchar é uma solução, porém deixará o código muito comprido(implementado na tela inicial do jogo)
+  -por hora, não será implementado nos textos no corpo do jogo
 
 
 Desenvolver:
-  - Novos monstros
   -Novos itens
-  -Sistema de score
+  -Criar durabilidade nas armas (armas se quebram após um período de uso)
